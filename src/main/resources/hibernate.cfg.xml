@@ -15,12 +15,9 @@
     <mapping class="Hibernate.Entity.StudentProfile"/>
     <mapping class="Hibernate.Entity.Student"/>
     <mapping class="Hibernate.Entity.Trainer"/>
-
-
     <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
-
     <!-- DB schema will be updated if needed -->
-<!--     <property name="hibernate.hbm2ddl.auto">update</property> -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
   </session-factory>
 </hibernate-configuration>

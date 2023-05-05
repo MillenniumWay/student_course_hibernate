@@ -4,14 +4,12 @@ import Hibernate.Entity.Course;
 import Hibernate.Entity.Student;
 import Hibernate.Entity.StudentProfile;
 import Hibernate.Entity.Trainer;
-import Hibernate.HQL.HQL;
-import org.hibernate.MappingException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 import org.junit.jupiter.api.Test;
-public class Runner {
+public class RunTests {
 
     @Test
     public void deleteTheCourse () {
@@ -67,6 +65,9 @@ public class Runner {
     try (SessionFactory sessionFactory = configuration.buildSessionFactory();
     Session session = sessionFactory.openSession()){
          session.beginTransaction();
+
+
+
 
       var trainer = Trainer.builder()
               .firstName("Kelvin")
